@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojas Plumbing and Electronics | Sangamner</title>
-    <!-- Decent, Modern Google Font -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
         /* Color Theme Variables: Blue, Yellow, White & Dark Slate */
@@ -65,7 +64,7 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
         }
 
@@ -92,12 +91,12 @@
             background-color: var(--accent-yellow);
             color: var(--dark-blue);
             text-align: center;
-            padding: 8px 15px;
+            padding: 10px 15px;
             font-weight: 600;
             font-size: 0.95rem;
         }
 
-        /* Main Page Sections */
+        /* Main Page Container */
         main {
             flex: 1;
             padding: 40px 5%;
@@ -108,7 +107,7 @@
 
         .page-section {
             display: none;
-            animation: fadeIn 0.4s ease-in-out;
+            animation: fadeIn 0.3s ease-in-out;
         }
 
         .page-section.active {
@@ -132,13 +131,13 @@
         }
 
         .hero h2 {
-            font-size: 2.4rem;
+            font-size: 2.3rem;
             margin-bottom: 15px;
             color: var(--accent-yellow);
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             max-width: 700px;
             margin: 0 auto 25px;
             line-height: 1.6;
@@ -362,12 +361,7 @@
         </div>
         <nav>
             <ul>
-                <li><button class="nav-btn active" onclick="showPage('home', this)">Home</button></li>
-                <li><button class="nav-btn" onclick="showPage('about', this)">About Us</button></li>
-                <li><button class="nav-btn" onclick="showPage('products', this)">What We Sell</button></li>
-                <li><button class="nav-btn" onclick="showPage('photos', this)">Shop Photos</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Jindal Group Partnership Highlight -->
+                <li><button type="button" id="btn-home" class="nav-btn active" onclick="showPage('home')">Home</button></li>
+                <li><button type="button" id="btn-about" class="nav-btn" onclick="showPage('about')">About Us</button></li>
+                <li><button type="button" id="btn-products" class="nav-btn" onclick="showPage('products')">What We Sell</button></li>
+                <li><button type="button" id="btn-photos" class="nav-btn" onclick="showPage('photos')">Shop Photos</button></li>
